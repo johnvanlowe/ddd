@@ -28,7 +28,7 @@ RUN chef-solo -c /var/chef/solo.rb -j /var/chef/solo.json
 
 #### DDD
 RUN apt-get -y install mysql-server
-RUN apt-get -y install pwgen python-setuptools php5-mysql php5-gd php5-curl php5-memcache memcached
+RUN apt-get -y install pwgen python-setuptools php5-mysql php5-gd php5-curl php5-ldap php5-memcache memcached
 RUN apt-get autoclean
 
 RUN dpkg-divert --local --rename --add /sbin/initctl
